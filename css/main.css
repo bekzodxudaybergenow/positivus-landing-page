@@ -42,6 +42,11 @@ a {
   opacity: 1;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0 12px;
+  }
+}
 @font-face {
   font-family: "Space Grotesk";
   src: url("/fonts/Space_Grotesk/SpaceGrotesk-Regular.woff2") format("woff2"), url("/fonts/Space_Grotesk/SpaceGrotesk-Regular.woff") format("woff");
