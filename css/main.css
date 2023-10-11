@@ -100,6 +100,8 @@ a {
 }
 .header__logo img {
   display: block;
+  width: 220px;
+  height: 56px;
 }
 .header__logo:hover {
   opacity: 0.8;
@@ -110,25 +112,6 @@ a {
 
 .nav {
   margin-left: auto;
-}
-
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  max-width: 320px;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
-  padding: 90px 32px 0 20px;
-  background-color: var(--EERIE-BLACK);
-}
-.sidebar .nav__link {
-  margin: 0;
-  padding-bottom: 12px;
-  color: var(--WHITE);
 }
 
 .nav__link {
@@ -159,11 +142,85 @@ a {
   color: var(--WHITE);
 }
 
+.header__menu {
+  display: none;
+}
+
 @media only screen and (max-width: 1280px) {
   .nav__link {
     margin-right: 34px;
   }
   .header__btn {
     padding: 18px 28px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header__logo img {
+    width: 192px;
+    height: 48px;
+  }
+  .nav__link {
+    font-size: 18px;
+    margin-right: 24px;
+  }
+  .header__btn {
+    font-size: 18px;
+    padding: 10px 21px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header__logo img {
+    width: 182px;
+    height: 42px;
+  }
+  .nav__link {
+    margin-right: 14px;
+  }
+  .header__btn {
+    font-size: 18px;
+    padding: 10px 18px;
+  }
+}
+@media only screen and (max-width: 922px) {
+  .nav,
+  .header__btn {
+    display: none;
+  }
+  .header__menu {
+    display: block;
+    margin-left: auto;
+    transition: opacity ease 0.3s;
+  }
+  .header__menu:hover {
+    opacity: 0.6;
+  }
+  .header__menu:active {
+    opacity: 1;
+  }
+  .header__menu--open {
+    display: block;
+    cursor: pointer;
+  }
+  .header__menu--close {
+    display: none;
+  }
+  .nav.sidebar {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding: 140px 26px 0 20px;
+    background-color: var(--EERIE-BLACK);
+  }
+  .nav.sidebar .nav__link {
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 22px;
+    color: var(--WHITE);
   }
 }/*# sourceMappingURL=main.css.map */
