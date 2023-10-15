@@ -188,21 +188,16 @@ a {
   }
   .header__menu {
     display: block;
+    position: relative;
     margin-left: auto;
     transition: opacity ease 0.3s;
+    cursor: pointer;
   }
   .header__menu:hover {
     opacity: 0.6;
   }
   .header__menu:active {
     opacity: 1;
-  }
-  .header__menu--open {
-    display: block;
-    cursor: pointer;
-  }
-  .header__menu--close {
-    display: none;
   }
   .nav.sidebar {
     display: flex;

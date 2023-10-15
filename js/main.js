@@ -1,6 +1,8 @@
 const header = document.querySelector('.header');
 const nav = document.querySelector('.nav');
-const headerMenuOpen = document.querySelector('.header__menu--open');
+const sidebar = document.querySelectorAll('.sidebar');
+const headerMenu = document.querySelector('.header__menu');
+const headerMenuImg = document.querySelector('.header__menu--img');
 
 window.addEventListener('scroll', () => {
     if(window.pageYOffset > 0) {
@@ -11,6 +13,6 @@ window.addEventListener('scroll', () => {
     }
 })
 
-headerMenuOpen.addEventListener('click', () => {
-    nav.classList.add('sidebar');
+headerMenu.addEventListener('click', () => {
+    nav.classList.toggle('sidebar');
 })
