@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1280px;
   padding: 0 20px;
@@ -218,4 +223,33 @@ a {
     padding-bottom: 22px;
     color: var(--WHITE);
   }
+}
+.hero {
+  padding-top: 200px;
+}
+
+.hero__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__content {
+  max-width: 531px;
+}
+
+.hero__content--title {
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.hero__content-desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+.hero__picture img {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
