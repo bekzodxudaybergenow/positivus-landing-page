@@ -334,4 +334,7 @@ img {
     height: 68px;
     font-size: 20px;
   }
+  .hero__content-desc {
+    line-height: 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
