@@ -22,7 +22,9 @@ img {
     margin: 0 auto;
 }
 .btn {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
     line-height: 28px;
