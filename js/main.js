@@ -16,3 +16,17 @@ window.addEventListener('scroll', () => {
 headerMenu.addEventListener('click', () => {
     nav.classList.toggle('sidebar');
 })
+
+let swiper = new Swiper(".swiper__wrap ", {
+    spaceBetween: 20,
+    slidesPerView: 6,
+    freeMode: true,
+    breakpoints: {
+        1024: {
+            grabCursor: true,
+            slidesPerView: 6,
+            spaceBetween: 96,
+        },
+    },
+
+  });
