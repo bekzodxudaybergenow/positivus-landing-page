@@ -1,18 +1,17 @@
 .company {
     padding-top: 70px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
 }
 .company__picture {
     justify-content: space-between;
 }
 .company__picture--img {
     flex-shrink: 1;
-    width: auto;
-    height: 48px;
     height: 48px;
     width: 127px !important;
-
 }
-
 @media only screen and (max-width: 1200px) {
     .company {
         padding-top: 54px;

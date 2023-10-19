@@ -1,8 +1,7 @@
 const header = document.querySelector('.header');
-const nav = document.querySelector('.nav');
-const sidebar = document.querySelectorAll('.sidebar');
+const headerSidebar = document.querySelector('.header__sidebar');
 const headerMenu = document.querySelector('.header__menu');
-const headerMenuImg = document.querySelector('.header__menu--img');
+const closeBtn = document.querySelector('.header__sidebar--closebtn');
 
 window.addEventListener('scroll', () => {
     if(window.pageYOffset > 0) {
@@ -13,9 +12,15 @@ window.addEventListener('scroll', () => {
     }
 })
 
+
 headerMenu.addEventListener('click', () => {
-    nav.classList.toggle('sidebar');
+    headerSidebar.classList.remove('hidden');
 })
+closeBtn.addEventListener('click', () => {
+    headerSidebar.classList.add('hidden');
+})
+
+
 
 let swiper = new Swiper(".swiper__wrap ", {
     spaceBetween: 20,

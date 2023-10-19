@@ -49,6 +49,10 @@ img {
   opacity: 1;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media only screen and (max-width: 1024px) {
   .container {
     padding: 0 12px;
@@ -153,6 +157,10 @@ img {
   display: none;
 }
 
+.header__sidebar {
+  display: none;
+}
+
 @media only screen and (max-width: 1280px) {
   .nav__link {
     margin-right: 34px;
@@ -206,24 +214,40 @@ img {
   .header__menu:active {
     opacity: 1;
   }
-  .nav.sidebar {
+  .header__sidebar {
     display: flex;
     flex-direction: column;
     max-width: 340px;
     width: 100%;
-    height: 100vh;
-    position: absolute;
+    height: 100%;
+    position: fixed;
     top: 0;
     right: 0;
+    z-index: 1000;
     text-align: right;
     padding: 140px 26px 0 20px;
     background-color: var(--EERIE-BLACK);
   }
-  .nav.sidebar .nav__link {
+  .header__sidebar .nav__link {
     font-size: 22px;
     margin: 0;
     padding-bottom: 22px;
     color: var(--WHITE);
+  }
+  .header__sidebar--closebtn {
+    position: absolute;
+    top: 42px;
+    right: 25px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: opacity ease 0.3s;
+  }
+  .header__sidebar--closebtn:hover {
+    opacity: 0.6;
+  }
+  .header__sidebar--closebtn:active {
+    opacity: 1;
   }
 }
 .hero {
@@ -340,6 +364,9 @@ img {
 }
 .company {
   padding-top: 70px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
 }
 
 .company__picture {
@@ -348,8 +375,6 @@ img {
 
 .company__picture--img {
   flex-shrink: 1;
-  width: auto;
-  height: 48px;
   height: 48px;
   width: 127px !important;
 }

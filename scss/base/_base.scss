@@ -44,6 +44,9 @@ img {
         opacity: 1;
     }
 }
+.hidden {
+    display: none !important;
+}
 @media only screen and (max-width: 1024px) {
     .container {
         padding: 0 12px;
