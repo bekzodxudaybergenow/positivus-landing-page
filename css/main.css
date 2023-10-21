@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-img {
+.img {
   width: 100%;
   height: auto;
 }
@@ -93,6 +93,7 @@ img {
   padding-top: 60px;
   background-color: var(--WHITE);
   transition: ease 0.3s;
+  z-index: 1000;
 }
 
 .shadow {
@@ -364,8 +365,6 @@ img {
 }
 .company {
   padding-top: 70px;
-  position: absolute;
-  z-index: -1;
   width: 100%;
 }
 
@@ -383,4 +382,7 @@ img {
   .company {
     padding-top: 54px;
   }
+}
+.service {
+  padding-top: 140px;
 }/*# sourceMappingURL=main.css.map */
