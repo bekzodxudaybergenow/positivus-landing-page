@@ -47,6 +47,20 @@ a {
 .hidden {
     display: none !important;
 }
+.title {
+    display: inline-block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    padding: 0 7px;
+    background-color: var(--ANTI-FLASH-WHITE);
+    border-radius: 7px;
+}
+.desc {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
 @media only screen and (max-width: 1024px) {
     .container {
         padding: 0 12px;
