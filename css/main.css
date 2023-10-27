@@ -623,4 +623,141 @@ a {
     height: 110px;
     align-self: flex-end;
   }
+}
+.help {
+  padding-top: 81px;
+}
+
+.help__row {
+  display: flex;
+  position: relative;
+  padding: 60px;
+  background-color: var(--ANTI-FLASH-WHITE);
+  border-radius: 45px;
+}
+
+.help__content {
+  max-width: 500px;
+}
+
+.help__content--title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+.help__content--desc {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+
+.help__content--btn {
+  display: inline-block;
+}
+
+.help__image {
+  position: absolute;
+  top: -23.5px;
+  right: 135px;
+}
+.help__image img {
+  display: block;
+  width: 360px;
+  height: 394px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .help__image {
+    right: 70px;
+  }
+}
+@media only screen and (max-width: 1076px) {
+  .help {
+    padding-top: 70px;
+  }
+  .help__content--title,
+  .help__content--desc {
+    margin-bottom: 22px;
+  }
+  .help__content--btn {
+    padding: 15px 27px;
+  }
+  .help__image {
+    top: -3.5px;
+    right: 74px;
+  }
+  .help__image img {
+    width: 296px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 985px) {
+  .help__row {
+    padding: 50px;
+  }
+  .help__content {
+    max-width: 372px;
+  }
+  .help__image {
+    top: 10px;
+    right: 90px;
+  }
+  .help__image img {
+    width: 282px;
+  }
+}
+@media only screen and (max-width: 922px) {
+  .help__image {
+    top: 14px;
+    right: 55px;
+  }
+  .help__image img {
+    width: 282px;
+  }
+}
+@media only screen and (max-width: 788px) {
+  .help__image {
+    top: 45px;
+    right: 38px;
+  }
+  .help__image img {
+    width: 240px;
+  }
+}
+@media only screen and (max-width: 728px) {
+  .help__content {
+    max-width: 500px;
+  }
+  .help__image {
+    display: none;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .help__content--title {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+  .help__content--desc {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .help__content--btn {
+    display: block;
+    text-align: center;
+  }
+  .help__content--btn span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 395px) {
+  .help__content--btn {
+    font-size: 18px;
+    padding: 12px 14px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .help__row {
+    padding: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
