@@ -33,5 +33,10 @@ let swiper = new Swiper(".swiper__wrap ", {
             spaceBetween: 96,
         },
     },
+});
 
-  });
+let caseSwiper = new Swiper(".case__swiper ", {
+    slidesPerView: 3,
+    freeMode: true,
+});
+
