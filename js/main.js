@@ -36,7 +36,11 @@ let swiper = new Swiper(".swiper__wrap ", {
 });
 
 let caseSwiper = new Swiper(".case__swiper ", {
-    slidesPerView: 3,
+    slidesPerView: 2,
     freeMode: true,
+    985: {
+        slidesPerView: 3,
+        freeMode: true,
+    },
 });
 
