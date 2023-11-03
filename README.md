@@ -4,7 +4,7 @@ Figma: [Maket](https://www.figma.com/file/93Ki6yVOJDEeer2knAbj3z/Positivus-Landi
 Netlify: [View](https://positivus-bb.netlify.app/)
 
 Qiyinchiliklar: Sidebarda qiynaldim, har doimgidan biroz boshqacha kelganligi sababli. Swiperjs companiya logatiblarini qo'yish,
-ayniqsa moslashuvchan qilishda ko'p vaqtni oldi, hozircha shunday qoldiraman.
+ayniqsa moslashuvchan qilishda ko'p vaqtni oldi, shu qismini hozircha shunday qoldiraman. Yana swiperjsda, bu gal case bo'limda, oxirida biroz joy qolyabdi.
 
 
 
