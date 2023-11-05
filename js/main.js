@@ -2,6 +2,7 @@ const header = document.querySelector('.header');
 const headerSidebar = document.querySelector('.header__sidebar');
 const headerMenu = document.querySelector('.header__menu');
 const closeBtn = document.querySelector('.header__sidebar--closebtn');
+const accordionItems = document.querySelectorAll('.accordion__item');
 
 window.addEventListener('scroll', () => {
     if(window.pageYOffset > 0) {
@@ -44,3 +45,9 @@ let caseSwiper = new Swiper(".case__swiper ", {
     },
 });
 
+
+accordionItems.forEach((e) => {
+    e.addEventListener('click', (item) => {
+        e.classList.toggle('active');
+    })
+}) 
