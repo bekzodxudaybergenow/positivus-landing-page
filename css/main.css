@@ -53,10 +53,6 @@ a {
   display: none !important;
 }
 
-.active {
-  display: block;
-}
-
 .title {
   display: inline-block;
   font-family: "Space Grotesk", sans-serif;
@@ -924,6 +920,7 @@ a {
   background-color: var(--ANTI-FLASH-WHITE);
   border: 1px solid var(--EERIE-BLACK);
   border-bottom: 5px solid var(--EERIE-BLACK);
+  cursor: pointer;
 }
 .accordion__item + * {
   margin-top: 30px;
@@ -937,7 +934,6 @@ a {
   font-size: 30px;
   font-weight: 500;
   position: relative;
-  cursor: pointer;
 }
 .accordion__item--subtitle span {
   font-size: 60px;
@@ -978,6 +974,6 @@ a {
   background-color: var(--EERIE-BLACK);
 }
 
-.accordion__item--desc.active {
-  display: flex;
+.accordion__item.active .accordion__item--desc {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
