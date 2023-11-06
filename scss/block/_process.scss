@@ -80,3 +80,119 @@
 .accordion__item.active .accordion__item--desc {
     display: block;
 }
+.accordion__item.active .accordion__item--subtitle {
+    &::after {
+        content: '-';
+        align-items: flex-end;
+    }
+}
+
+@media only screen and (max-width: 985px) {
+    .process {
+        padding-top: 128px;
+    }
+    .process__content {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 65px;
+    }
+    .process__content--title {
+        margin: 0 0 16px;
+    }
+    .accordion__item {
+        padding: 32px 48px;
+    }
+    .accordion__item--subtitle {
+        font-size: 26px;
+        & span {
+            font-size: 54px;
+        }
+        &::after {
+            width: 46px;
+            height: 46px;
+        }
+    }
+    .accordion__item.active .accordion__item--subtitle {
+        &::after {
+            content: '-';
+            align-items: center;
+        }
+    }
+}
+@media only screen and (max-width: 740px) {
+    .accordion__item--subtitle {
+        font-size: 22px;
+        padding-right: 50px;
+
+        & span {
+            font-size: 46px;
+        }
+        &::after {
+            width: 40px;
+            height: 40px;
+            font-size: 44px;
+        }
+    }
+    .accordion__item--desc {
+        min-height: 110px;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 495px) {
+    .accordion__item {
+        padding: 30px 30px;
+
+        & + * {
+            margin-top: 20px;
+        }
+    }
+    .accordion__item--subtitle {
+        font-size: 18px;
+
+        & span {
+            font-size: 30px;
+        }
+        &::after {
+            width: 30px;
+            height: 30px;
+            font-size: 35px;
+        }
+    }
+    .accordion__item--desc {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .process__content {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .process__content--title {
+        font-size: 38px;
+        margin-bottom: 30px;
+        background-color: var(--INCHWORM);
+    }
+    .process__content--desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .accordion__item--subtitle {
+        padding-right: 40px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .process__content--title {
+        margin-bottom: 20px;
+    }
+    .accordion__item {
+        padding: 14px 22px;
+    }
+    .accordion__item--subtitle {
+        font-size: 16px;
+
+        & span {
+            margin-right: 12px;
+        }
+    }
+}
