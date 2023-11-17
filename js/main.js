@@ -53,8 +53,16 @@ accordionItems.forEach((e) => {
 }) 
 
 let testimonialsSwiper = new Swiper(".testimonials__swiper ", {
-    slidesPerView: 1.8,
-    spaceBetween: 50,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+        560: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 1.9,
+        }
+    },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
