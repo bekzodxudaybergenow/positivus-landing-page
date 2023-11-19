@@ -382,20 +382,33 @@
                 </div>
                 <form class="contact__form">
                     <div class="contact__form--accept">
-                        <div class="contact__accept--checkbox">
-                            <input type="checkbox" id="say-hi">
-                            <label for="say-hi">Say Hi</label>
-                            <input type="checkbox" id="get-quote">
-                            <label for="get-quote">Get a Quote</label>
+                        <div class="contact__accept--radio">
+                            <label>
+                                <input class="contact__radio--real" type="radio" name="name">
+                                <span class="contact__radio--custom"></span>
+                                Say Hi
+                            </label>
+                            <label>
+                                <input class="contact__radio--real" type="radio" name="name">
+                                <span class="contact__radio--custom"></span>
+                                Get a Quote
+                            </label>
                         </div>
-                        <label for="name">Name</label>
-                        <input type="text" placeholder="Name">
-                        <label for="email">Email*</label>
-                        <input type="text" placeholder="Email">
-                        <label for="message">Message*</label>
-                        <textarea id="message" placeholder="Message"></textarea>
+                        <label class="contact__accept--label">
+                            <span class="contact__accept--subtitle">Name</span>
+                            <input class="contact__accept--input" type="text" placeholder="Name">
+                        </label>
+                        <label class="contact__accept--label">
+                            <span class="contact__accept--subtitle">Email*</span>
+                            <input class="contact__accept--input" type="text" placeholder="Email">
+                        </label>
+                        <label class="contact__accept--label">
+                            <span class="contact__accept--subtitle">Message*</span>
+                            <textarea class="contact__accept--input contact__accept--input-message" id="message" placeholder="Message"></textarea>
+                        </label>
                     </div>
-                    <input class="btn form__btn" type="submit">
+                    <input class="btn form__btn" type="submit" value="Send Message">
+                    <img class="contact__form--bg-img" src="./img/contact/contact-img.svg" alt="Contact form background image">
                 </form>
             </div>
         </section>
