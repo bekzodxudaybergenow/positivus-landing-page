@@ -1,7 +1,7 @@
-.footer {
+.footer__row {
     position: relative;
     margin-top: 90px;
-    padding: 50px 0 30px;
+    padding: 50px 20px 30px;
     background-color: var(--EERIE-BLACK);
 }
 .footer__menu {
@@ -70,6 +70,7 @@
 .footer__contact--form {
     padding: 30px;
     background-color: #292A32;
+    border-radius: 14px;
 }
 .footer__form--input {
     width: 100%;
@@ -124,6 +125,7 @@
     & a {
         color: var(--WHITE);
         line-height: 24px;
+        outline-color: var(--INCHWORM);
     }
 }
 @media only screen and (min-width: 768px) {
