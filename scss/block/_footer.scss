@@ -181,3 +181,50 @@
         }
     }
 }
+@media only screen and (min-width: 1024px) {
+    .footer__row {
+        padding: 55px 60px;
+        margin-top: 140px;
+        border-radius: 45px 45px 0 0;
+    }
+    .footer__menu--nav {
+        margin-left: 155px;
+        column-gap: 40px;
+    }
+    .footer__nav--link {
+        font-size: 18px;
+        transition: ease .2s;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+    .footer__socials {
+        top: 49px;
+        right: 60px;
+        bottom: auto;
+    }
+    .footer__contact--email,
+    .footer__contact--phone,
+    footer__contact--address {
+        font-size: 18px;
+    }
+    .footer__contact {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__contact--form {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+    }
+    .footer__form--input {
+        height: 67px;
+        margin-bottom: 0;
+    }
+    .footer__form--btn {
+        height: 67px;
+        background-color: var(--ANTI-FLASH-WHITE);
+        cursor: pointer;
+    }
+}
